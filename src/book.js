@@ -21,34 +21,42 @@ function buildMainCharacter(name, age, pronouns) {
 
 // Declare saveReview function with a review parameter
 function saveReview (review, reviews) {
-  // if the reviews array includes the new review
+  // if the reviews array includes the new review, display reviews
   if (reviews.includes(review)) {
     return reviews.length;
+    //if it does not, add the review to the reviews array
   } else {
     return reviews.push(review);
   }
 }
 //console.log(saveReview);
 
+//Declare calculatePageCount function with the title parameter
 function calculatePageCount (title) {
+  //Return a value of the title letter count * 20
   return title.length * 20;
-};
+}
 
 //console.log(calculatePageCount);
 
+//declare a funciton of writeBook that declares an object using it's parameters as values
 function writeBook (title, bookCharacter, genre) {
-  return book = {
+  //create a variable equal to an object with 4 kvp's
+  var book = {
     title: title,
     mainCharacter: bookCharacter,
     pageCount: calculatePageCount(title),
     genre: genre,
   };
+  return book;
 }
-
 //console.log(writeBook);
 
+//declare a function of editBook with a book parameter
 function editBook(book) {
-  book.pageCount = book.pageCount * .75;
+//Access pageCount of a book
+  book.pageCount = book.pageCount * 0.75;
+  //return the value of book's pageCount
   return book.pageCount;
 };
 //console.log(editBook);
