@@ -55,7 +55,7 @@ function writeBook (title, bookCharacter, genre) {
 //declare a function of editBook with a book parameter
 function editBook(book) {
 //Access pageCount of a book
-  book.pageCount = book.pageCount * 0.75;
+  book.pageCount = book.pageCount * .75;
   //return the value of book's pageCount
   return book.pageCount;
 };
