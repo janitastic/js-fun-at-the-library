@@ -6,8 +6,11 @@ module.exports = {
 };
 
 function shelfBook (book, shelf) {
-  if (shelf.length < 3) {
-    return shelf.unshift(book);
+  if (shelf.length >= 3) {
+    return
+  } else {
+    shelf = shelf.unshift(book);
+    return shelf;
   }
 }
 
