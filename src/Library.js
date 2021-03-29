@@ -1,14 +1,15 @@
 function createLibrary(name) {
-  return library = {
+  var library = {
     name: name,
     shelves: {
-      fantasy: [],
-      fiction: [],
-      nonFiction: [],
+    fantasy: [],
+    fiction: [],
+    nonFiction: [],
     },
   };
   return library;
 }
+
 
 function addBook(library, book) {
   library['shelves'][book.genre].push(book)

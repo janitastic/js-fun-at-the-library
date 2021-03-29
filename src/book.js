@@ -34,12 +34,13 @@ function saveReview (review, reviews) {
 //Declare calculatePageCount function with the title parameter
 function calculatePageCount (title) {
   //Return a value of the title letter count * 20
-  return title.length * 20;
+  var bookPageCount = title.length * 20;
+  return bookPageCount;
 }
 
 //console.log(calculatePageCount);
 
-//declare a funciton of writeBook that declares an object using it's parameters as values
+//declare a function of writeBook that declares an object using it's parameters as values
 function writeBook (title, bookCharacter, genre) {
   //create a variable equal to an object with 4 kvp's
   var book = {
